@@ -43,4 +43,5 @@ require (
 )
 
 replace github.com/ldsec/lattigo/v2 => ../lattigo
+
 replace github.com/hhcho/mpc-core => ../mpc-core
