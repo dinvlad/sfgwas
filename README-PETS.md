@@ -35,7 +35,7 @@ used that folder inside the (Linux) Docker container.
 
 Python APIs for [training](https://www.drivendata.org/competitions/141/uk-federated-learning-2-pandemic-forecasting-federated/page/644/#training)
 and [testing](https://www.drivendata.org/competitions/141/uk-federated-learning-2-pandemic-forecasting-federated/page/644/#test)
-only pass _paths_ to the input and output CSV files and data directories,
+only pass _paths_ to the input and output CSV files and the model directory,
 so we don't need to install any Python dependencies for it.
 
 See an example solution in
