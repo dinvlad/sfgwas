@@ -38,10 +38,6 @@ def fit(
         model_dir (Path): Path to a directory that is constant between the train
             and test stages. You must use this directory to save and reload
             your trained model between the stages.
-        preds_format_path (Path): Path to CSV file matching the format you must
-            write your predictions with, filled with dummy values.
-        preds_dest_path (Path): Destination path that you must write your test
-            predictions to as a CSV file.
     '''
     go_run('fit',
         '-person-data-path', person_data_path.as_posix(),
