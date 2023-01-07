@@ -1,5 +1,5 @@
 '''
-Federated solution based on:
+Centralized solution based on:
 https://github.com/drivendataorg/pets-prize-challenge-runtime/blob/main/submission_templates/pandemic/solution_centralized.py
 
 More information about the data format:
@@ -9,7 +9,7 @@ from pathlib import Path
 
 from go import go_run, path_str
 
-GO_EXEC='solution_centralized'
+GO_EXEC='solution'
 
 
 def fit(
@@ -42,7 +42,7 @@ def fit(
             and test stages. You must use this directory to save and reload
             your trained model between the stages.
     '''
-    go_run(model_dir / GO_EXEC, 'fit',
+    go_run(model_dir / GO_EXEC, 'centralized-fit',
         '-person-data-path', path_str(person_data_path),
         '-household-data-path', path_str(household_data_path),
         '-residence-location-data-path', path_str(residence_location_data_path),
@@ -90,7 +90,7 @@ def predict(
         preds_dest_path (Path): Destination path that you must write your test
             predictions to as a CSV file.
     '''
-    go_run(model_dir / GO_EXEC, 'predict',
+    go_run(model_dir / GO_EXEC, 'centralized-predict',
         '-person-data-path', path_str(person_data_path),
         '-household-data-path', path_str(household_data_path),
         '-residence-location-data-path', path_str(residence_location_data_path),
