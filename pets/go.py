@@ -1,24 +1,32 @@
 '''
 Utils for interfacing with Go
 '''
+import os
 import sys
 from subprocess import run
 
-GO_MODULE='.'
+GO_EXEC='./go-pets'
 
-def go_run(*args: str):
+def _run(*cmd: str):
     '''
-    Build (if necessary) and
-    run the Go module with provided command-line args
+    Execute a command with arguments
     '''
-    cmd = ['go', 'run', GO_MODULE, '--', *args]
     print('Running', *cmd)
-
     run(cmd,
         stdout=sys.stdout,
         stderr=sys.stderr,
         check=True,
     )
+
+def go_run(*args: str):
+    '''
+    Build (if necessary) and
+    run the Go executable with provided command-line args
+    '''
+    if not os.path.exists(GO_EXEC):
+        _run('go', 'build', '-o', GO_EXEC)
+
+    _run(GO_EXEC, *args)
 
 
 if  __name__ == "__main__":
