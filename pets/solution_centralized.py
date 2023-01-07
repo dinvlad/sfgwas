@@ -1,6 +1,9 @@
 '''
 Federated solution based on:
 https://github.com/drivendataorg/pets-prize-challenge-runtime/blob/main/examples_src/pandemic/solution_centralized.py
+
+More information about the data format:
+https://www.drivendata.org/competitions/141/uk-federated-learning-2-pandemic-forecasting-federated/page/644
 '''
 from pathlib import Path
 
