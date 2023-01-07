@@ -1,13 +1,16 @@
 '''
 Federated solution based on:
-https://github.com/drivendataorg/pets-prize-challenge-runtime/blob/main/examples_src/pandemic/solution_centralized.py
+https://github.com/drivendataorg/pets-prize-challenge-runtime/blob/main/submission_templates/pandemic/solution_centralized.py
 
 More information about the data format:
 https://www.drivendata.org/competitions/141/uk-federated-learning-2-pandemic-forecasting-federated/page/644
 '''
 from pathlib import Path
 
-from go import go_run
+from go import go_run, path_str
+
+GO_EXEC='solution_centralized'
+
 
 def fit(
     person_data_path: Path,
@@ -39,15 +42,15 @@ def fit(
             and test stages. You must use this directory to save and reload
             your trained model between the stages.
     '''
-    go_run('fit',
-        '-person-data-path', person_data_path.as_posix(),
-        '-household-data-path', household_data_path.as_posix(),
-        '-residence-location-data-path', residence_location_data_path.as_posix(),
-        '-activity-location-data-path', activity_location_data_path.as_posix(),
-        '-activity-location-assignment-data-path', activity_location_assignment_data_path.as_posix(),
-        '-population-network-data-path', population_network_data_path.as_posix(),
-        '-disease-outcome-data-path', disease_outcome_data_path.as_posix(),
-        '-model-dir', model_dir.as_posix(),
+    go_run(model_dir / GO_EXEC, 'fit',
+        '-person-data-path', path_str(person_data_path),
+        '-household-data-path', path_str(household_data_path),
+        '-residence-location-data-path', path_str(residence_location_data_path),
+        '-activity-location-data-path', path_str(activity_location_data_path),
+        '-activity-location-assignment-data-path', path_str(activity_location_assignment_data_path),
+        '-population-network-data-path', path_str(population_network_data_path),
+        '-disease-outcome-data-path', path_str(disease_outcome_data_path),
+        '-model-dir', path_str(model_dir),
     )
 
 
@@ -87,15 +90,15 @@ def predict(
         preds_dest_path (Path): Destination path that you must write your test
             predictions to as a CSV file.
     '''
-    go_run('predict',
-        '-person-data-path', person_data_path.as_posix(),
-        '-household-data-path', household_data_path.as_posix(),
-        '-residence-location-data-path', residence_location_data_path.as_posix(),
-        '-activity-location-data-path', activity_location_data_path.as_posix(),
-        '-activity-location-assignment-data-path', activity_location_assignment_data_path.as_posix(),
-        '-population-network-data-path', population_network_data_path.as_posix(),
-        '-disease-outcome-data-path', disease_outcome_data_path.as_posix(),
-        '-model-dir', model_dir.as_posix(),
-        '-preds-format-path', preds_format_path.as_posix(),
-        '-preds-dest-path', preds_dest_path.as_posix(),
+    go_run(model_dir / GO_EXEC, 'predict',
+        '-person-data-path', path_str(person_data_path),
+        '-household-data-path', path_str(household_data_path),
+        '-residence-location-data-path', path_str(residence_location_data_path),
+        '-activity-location-data-path', path_str(activity_location_data_path),
+        '-activity-location-assignment-data-path', path_str(activity_location_assignment_data_path),
+        '-population-network-data-path', path_str(population_network_data_path),
+        '-disease-outcome-data-path', path_str(disease_outcome_data_path),
+        '-model-dir', path_str(model_dir),
+        '-preds-format-path', path_str(preds_format_path),
+        '-preds-dest-path', path_str(preds_dest_path),
     )

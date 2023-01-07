@@ -2,9 +2,13 @@
 
 ## Calling Go from Python
 
-[pets/go.py](pets/go.py) provides a helper util
-to build (if necessary) the Go executable at runtime from Python,
-and to run it with the given command-line arguments.
+[pets/go.py](pets/go.py) provides helper utils:
+
+- to convert Path objects passed by Flower to our code,
+  into the absolute POSIX paths understood by Go
+
+- to build (if necessary) the Go code at runtime from Python,
+  and to run it with the given command-line arguments
 
 The only external runtime dependency to enable that is the Go compiler
 itself, which can be installed via `dependencies -> go` section
