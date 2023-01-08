@@ -3,7 +3,7 @@ Utils for interfacing with Go
 '''
 import sys
 from pathlib import Path
-from subprocess import run
+from subprocess import PIPE, Popen, run
 
 
 def _run(cmd: str, *args: str):
@@ -11,11 +11,17 @@ def _run(cmd: str, *args: str):
     Execute a command with arguments
     '''
     print('Running:', cmd, *args)
-    run([cmd, *args],
-        stdout=sys.stdout,
-        stderr=sys.stderr,
-        check=True,
-    )
+    run([cmd, *args], check=True)
+
+
+def _check_build(cmd_path: Path):
+    '''
+    Build (if necessary) a Go executable and return its POSIX path
+    '''
+    cmd = cmd_path.absolute().as_posix()
+    if not cmd_path.exists():
+        _run('go', 'build', '-o', cmd)
+    return cmd
 
 
 def go_run(cmd_path: Path, *args: str):
@@ -27,11 +33,17 @@ def go_run(cmd_path: Path, *args: str):
     between stages only over the model and client/server dirs,
     hence we should pass the built executable through it as well.
     '''
-    cmd = cmd_path.absolute().as_posix()
-    if not cmd_path.exists():
-        _run('go', 'build', '-o', cmd)
-
+    cmd = _check_build(cmd_path)
     _run(cmd, *args)
+
+
+def go_start(cmd_path: Path, *args: str):
+    '''
+    Build (if necessary) and
+    then start a Go process with the given command-line args
+    '''
+    cmd = _check_build(cmd_path)
+    return Popen([cmd, *args], stdin=PIPE, stdout=PIPE)
 
 
 def path_str(path: Path):

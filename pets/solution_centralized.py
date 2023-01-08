@@ -9,7 +9,7 @@ from pathlib import Path
 
 from go import go_run, path_str
 
-GO_EXEC='solution'
+GO_EXEC = 'solution'
 
 
 def fit(
