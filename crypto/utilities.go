@@ -110,11 +110,11 @@ func SaveCipherMatrixToFile(cps *CryptoParams, cm CipherMatrix, filename string)
 	writer.Flush()
 }
 
-func LoadCipherMatrixFromFile(cps *CryptoParams, filename string) CipherMatrix {
+func LoadCipherMatrixFromFile(cps *CryptoParams, filename string) (CipherMatrix, error) {
 	file, err := os.Open(filename)
 	defer file.Close()
 	if err != nil {
-		log.Fatal(err)
+		log.Error(err)
 	}
 
 	reader := bufio.NewReader(file)
@@ -137,7 +137,7 @@ func LoadCipherMatrixFromFile(cps *CryptoParams, filename string) CipherMatrix {
 	cdata := make([]byte, cbyteSize)
 	io.ReadFull(reader, cdata)
 
-	return UnmarshalCM(cps, nrows, numCtxPerRow, sdata, cdata)
+	return UnmarshalCM(cps, nrows, numCtxPerRow, sdata, cdata), err
 }
 
 //

@@ -1,0 +1,67 @@
+W : constants.go:17 (lib.init.0)             - Couldn't parse CONN_TIMEOUT, using default value:  10m0s
+Initializing network for thread:  6
+Initializing network for thread:  5
+Initializing network for thread:  0
+Opening socket on:  0.0.0.0:8020
+Initializing network for thread:  4
+Opening socket on:  0.0.0.0:8024
+Initializing network for thread:  1
+Initializing network for thread:  3
+Opening socket on:  0.0.0.0:8023
+Opening socket on:  0.0.0.0:8025
+Initializing network for thread:  2
+Opening socket on:  0.0.0.0:8022
+Opening socket on:  0.0.0.0:8026
+Opening socket on:  0.0.0.0:8021
+Successfully opened channel at port 8024
+Check port: opened and listening to party 1
+Opening socket on:  0.0.0.0:8044
+Successfully opened channel at port 8020
+Check port: opened and listening to party 1
+Opening socket on:  0.0.0.0:8040
+Successfully opened channel at port 8025
+Check port: opened and listening to party 1
+Opening socket on:  0.0.0.0:8045
+Successfully opened channel at port 8026
+Check port: opened and listening to party 1
+Opening socket on:  0.0.0.0:8046
+Successfully opened channel at port 8022
+Check port: opened and listening to party 1
+Opening socket on:  0.0.0.0:8042
+Successfully opened channel at port 8023
+Check port: opened and listening to party 1
+Opening socket on:  0.0.0.0:8043
+Successfully opened channel at port 8021
+Check port: opened and listening to party 1
+Opening socket on:  0.0.0.0:8041
+Successfully opened channel at port 8040
+Check port: opened and listening to party 2
+Network for thread 0 complete. Successfully opened channel at port 8046
+Check port: opened and listening to party 2
+Network for thread 6 complete. Successfully opened channel at port 8041
+Check port: opened and listening to party 2
+Network for thread 1 complete. Successfully opened channel at port 8045
+Check port: opened and listening to party 2
+Successfully opened channel at port 8044
+Network for thread 5 complete. Successfully opened channel at port 8043
+Check port: opened and listening to party 2
+Network for thread 3 complete. Successfully opened channel at port 8042
+Check port: opened and listening to party 2
+Network for thread 2 complete. Check port: opened and listening to party 2
+Network for thread 4 complete. 1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: configure_protocol.go:81 (mheexample.InitializeProtocol) - MPC parameters: bit length 256, data bits 60, frac bits 30
+1!: mhe.go:21 (mpc.ParallelNetworks.CollectiveInit) - CollectiveInit started
+1!: mhe.go:57 (mpc.ParallelNetworks.CollectiveInit) - PubKeyGen
+1!: mhe.go:60 (mpc.ParallelNetworks.CollectiveInit) - RelinKeyGen
+Pi 256
+1!: mhe.go:67 (mpc.ParallelNetworks.CollectiveInit) - RotKeyGen: shifts <= 20 and powers of two up to 8192
+1!: mhe.go:74 (mpc.ParallelNetworks.CollectiveInit) - CollectiveInit finished
+0  is ready
+PASS
+ok  	github.com/hhcho/sfgwas-private/mheexample	25.207s

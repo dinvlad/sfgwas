@@ -235,8 +235,10 @@ func Mult(cryptoParams *CryptoParams, ct1 *ckks.Ciphertext, ct2 *ckks.Ciphertext
 //RotateAndAdd computes the inner sum of a Ciphertext
 func RotateAndAdd(cryptoParams *CryptoParams, ct *ckks.Ciphertext, size int) *ckks.Ciphertext {
 	ctOut := ct.CopyNew().Ciphertext()
+	log.LLvl1("Start rotate ")
 	for rotate := 1; rotate < size; rotate *= 2 {
 		cryptoParams.WithEvaluator(func(eval ckks.Evaluator) error {
+			log.LLvl1("rotate by ", rotate)
 			rt := eval.RotateNew(ctOut, rotate)
 			eval.Add(rt, ctOut, ctOut)
 			return nil

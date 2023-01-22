@@ -1,0 +1,313 @@
+W : constants.go:17 (lib.init.0)             - Couldn't parse CONN_TIMEOUT, using default value:  10m0s
+Initializing network for thread:  6
+Initializing network for thread:  0
+Initializing network for thread:  1
+Initializing network for thread:  4
+Initializing network for thread:  5
+Initializing network for thread:  3
+Initializing network for thread:  2
+Connection failed. Error: dial tcp 127.0.0.1:8022: connect: connection refused
+Connection failed. Error: dial tcp 127.0.0.1:8025: connect: connection refused
+Connection failed. Error: dial tcp 127.0.0.1:8020: connect: connection refused
+Retrying in... 5s
+Retrying in... 5s
+Connection failed. Error: dial tcp 127.0.0.1:8026: connect: connection refused
+Retrying in... 5s
+Connection failed. Error: dial tcp 127.0.0.1:8021: connect: connection refused
+Retrying in... 5s
+Retrying in... 5s
+Connection failed. Error: dial tcp 127.0.0.1:8023: connect: connection refused
+Retrying in... 5s
+Connection failed. Error: dial tcp 127.0.0.1:8024: connect: connection refused
+Retrying in... 5s
+Successfully connected to 127.0.0.1:8024
+Connected to socket, listening to party 0
+Opening socket on:  0.0.0.0:8064
+Successfully connected to 127.0.0.1:8020
+Connected to socket, listening to party 0
+Opening socket on:  0.0.0.0:8060
+Successfully connected to 127.0.0.1:8026
+Connected to socket, listening to party 0
+Opening socket on:  0.0.0.0:8066
+Successfully connected to 127.0.0.1:8025
+Connected to socket, listening to party 0
+Opening socket on:  0.0.0.0:8065
+Successfully connected to 127.0.0.1:8022
+Connected to socket, listening to party 0
+Opening socket on:  0.0.0.0:8062
+Successfully connected to 127.0.0.1:8023
+Connected to socket, listening to party 0
+Opening socket on:  0.0.0.0:8063
+Successfully connected to 127.0.0.1:8021
+Connected to socket, listening to party 0
+Opening socket on:  0.0.0.0:8061
+Successfully opened channel at port 8060
+Check port: opened and listening to party 2
+Network for thread 0 complete. Successfully opened channel at port 8066
+Successfully opened channel at port 8061
+Check port: opened and listening to party 2
+Check port: opened and listening to party 2
+Network for thread 1 complete. Network for thread 6 complete. Successfully opened channel at port 8063
+Check port: opened and listening to party 2
+Network for thread 3 complete. Successfully opened channel at port 8065
+Check port: opened and listening to party 2
+Network for thread 5 complete. Successfully opened channel at port 8064
+Check port: opened and listening to party 2
+Network for thread 4 complete. Successfully opened channel at port 8062
+Check port: opened and listening to party 2
+Network for thread 2 complete. 1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: random.go:41 (mpc.InitializePRG)         - Warning: shared_keys_path not set in config. Falling back on deterministic keys (not secure).
+1!: configure_protocol.go:81 (mheexample.InitializeProtocol) - MPC parameters: bit length 256, data bits 60, frac bits 30
+1!: mhe.go:21 (mpc.ParallelNetworks.CollectiveInit) - CollectiveInit started
+1!: mhe.go:57 (mpc.ParallelNetworks.CollectiveInit) - PubKeyGen
+1!: mhe.go:60 (mpc.ParallelNetworks.CollectiveInit) - RelinKeyGen
+Pi 256
+1!: mhe.go:67 (mpc.ParallelNetworks.CollectiveInit) - RotKeyGen: shifts <= 20 and powers of two up to 8192
+Generate RotKey  1 / 211 , Galois element 5
+Generate RotKey  2 / 211 , Galois element 25
+Generate RotKey  3 / 211 , Galois element 125
+Generate RotKey  4 / 211 , Galois element 345
+Generate RotKey  5 / 211 , Galois element 625
+Generate RotKey  6 / 211 , Galois element 729
+Generate RotKey  7 / 211 , Galois element 761
+Generate RotKey  8 / 211 , Galois element 1025
+Generate RotKey  9 / 211 , Galois element 1281
+Generate RotKey  10 / 211 , Galois element 1641
+Generate RotKey  11 / 211 , Galois element 1773
+Generate RotKey  12 / 211 , Galois element 1817
+Generate RotKey  13 / 211 , Galois element 1873
+Generate RotKey  14 / 211 , Galois element 1949
+Generate RotKey  15 / 211 , Galois element 1953
+Generate RotKey  16 / 211 , Galois element 2049
+Generate RotKey  17 / 211 , Galois element 2149
+Generate RotKey  18 / 211 , Galois element 2501
+Generate RotKey  19 / 211 , Galois element 2617
+Generate RotKey  20 / 211 , Galois element 2717
+Generate RotKey  21 / 211 , Galois element 3125
+Generate RotKey  22 / 211 , Galois element 3277
+Generate RotKey  23 / 211 , Galois element 3361
+Generate RotKey  24 / 211 , Galois element 3473
+Generate RotKey  25 / 211 , Galois element 3617
+Generate RotKey  26 / 211 , Galois element 3805
+Generate RotKey  27 / 211 , Galois element 3881
+Generate RotKey  28 / 211 , Galois element 4053
+Generate RotKey  29 / 211 , Galois element 4097
+Generate RotKey  30 / 211 , Galois element 4413
+Generate RotKey  31 / 211 , Galois element 4425
+Generate RotKey  32 / 211 , Galois element 4561
+Generate RotKey  33 / 211 , Galois element 4989
+Generate RotKey  34 / 211 , Galois element 5257
+Generate RotKey  35 / 211 , Galois element 5389
+Generate RotKey  36 / 211 , Galois element 5613
+Generate RotKey  37 / 211 , Galois element 5709
+Generate RotKey  38 / 211 , Galois element 5741
+Generate RotKey  39 / 211 , Galois element 5809
+Generate RotKey  40 / 211 , Galois element 6297
+Generate RotKey  41 / 211 , Galois element 6481
+Generate RotKey  42 / 211 , Galois element 6853
+Generate RotKey  43 / 211 , Galois element 6917
+Generate RotKey  44 / 211 , Galois element 7065
+Generate RotKey  45 / 211 , Galois element 7069
+Generate RotKey  46 / 211 , Galois element 7097
+Generate RotKey  47 / 211 , Galois element 7153
+Generate RotKey  48 / 211 , Galois element 7277
+Generate RotKey  49 / 211 , Galois element 7377
+Generate RotKey  50 / 211 , Galois element 7689
+Generate RotKey  51 / 211 , Galois element 7937
+Generate RotKey  52 / 211 , Galois element 7953
+Generate RotKey  53 / 211 , Galois element 7973
+Generate RotKey  54 / 211 , Galois element 8009
+Generate RotKey  55 / 211 , Galois element 8141
+Generate RotKey  56 / 211 , Galois element 8193
+Generate RotKey  57 / 211 , Galois element 8205
+Generate RotKey  58 / 211 , Galois element 8257
+Generate RotKey  59 / 211 , Galois element 8517
+Generate RotKey  60 / 211 , Galois element 8561
+Generate RotKey  61 / 211 , Galois element 8629
+Generate RotKey  62 / 211 , Galois element 8725
+Generate RotKey  63 / 211 , Galois element 8869
+Generate RotKey  64 / 211 , Galois element 8893
+Generate RotKey  65 / 211 , Galois element 9085
+Generate RotKey  66 / 211 , Galois element 9253
+Generate RotKey  67 / 211 , Galois element 9261
+Generate RotKey  68 / 211 , Galois element 9289
+Generate RotKey  69 / 211 , Galois element 9745
+Generate RotKey  70 / 211 , Galois element 9817
+Generate RotKey  71 / 211 , Galois element 9901
+Generate RotKey  72 / 211 , Galois element 10205
+Generate RotKey  73 / 211 , Galois element 10377
+Generate RotKey  74 / 211 , Galois element 10561
+Generate RotKey  75 / 211 , Galois element 10745
+Generate RotKey  76 / 211 , Galois element 11201
+Generate RotKey  77 / 211 , Galois element 11261
+Generate RotKey  78 / 211 , Galois element 11653
+Generate RotKey  79 / 211 , Galois element 11697
+Generate RotKey  80 / 211 , Galois element 11973
+Generate RotKey  81 / 211 , Galois element 12021
+Generate RotKey  82 / 211 , Galois element 12505
+Generate RotKey  83 / 211 , Galois element 12589
+Generate RotKey  84 / 211 , Galois element 12593
+Generate RotKey  85 / 211 , Galois element 12657
+Generate RotKey  86 / 211 , Galois element 12753
+Generate RotKey  87 / 211 , Galois element 13069
+Generate RotKey  88 / 211 , Galois element 13497
+Generate RotKey  89 / 211 , Galois element 13537
+Generate RotKey  90 / 211 , Galois element 13813
+Generate RotKey  91 / 211 , Galois element 14125
+Generate RotKey  92 / 211 , Galois element 14189
+Generate RotKey  93 / 211 , Galois element 14249
+Generate RotKey  94 / 211 , Galois element 14561
+Generate RotKey  95 / 211 , Galois element 14565
+Generate RotKey  96 / 211 , Galois element 14613
+Generate RotKey  97 / 211 , Galois element 14709
+Generate RotKey  98 / 211 , Galois element 14833
+Generate RotKey  99 / 211 , Galois element 15049
+Generate RotKey  100 / 211 , Galois element 15101
+Generate RotKey  101 / 211 , Galois element 15625
+Generate RotKey  102 / 211 , Galois element 15721
+Generate RotKey  103 / 211 , Galois element 15873
+Generate RotKey  104 / 211 , Galois element 15957
+Generate RotKey  105 / 211 , Galois element 16049
+Generate RotKey  106 / 211 , Galois element 16317
+Generate RotKey  107 / 211 , Galois element 16345
+Generate RotKey  108 / 211 , Galois element 16357
+Generate RotKey  109 / 211 , Galois element 16385
+Generate RotKey  110 / 211 , Galois element 16805
+Generate RotKey  111 / 211 , Galois element 16841
+Generate RotKey  112 / 211 , Galois element 16873
+Generate RotKey  113 / 211 , Galois element 16897
+Generate RotKey  114 / 211 , Galois element 17365
+Generate RotKey  115 / 211 , Galois element 17385
+Generate RotKey  116 / 211 , Galois element 17713
+Generate RotKey  117 / 211 , Galois element 17797
+Generate RotKey  118 / 211 , Galois element 18085
+Generate RotKey  119 / 211 , Galois element 18109
+Generate RotKey  120 / 211 , Galois element 18489
+Generate RotKey  121 / 211 , Galois element 18669
+Generate RotKey  122 / 211 , Galois element 18829
+Generate RotKey  123 / 211 , Galois element 18961
+Generate RotKey  124 / 211 , Galois element 19025
+Generate RotKey  125 / 211 , Galois element 19117
+Generate RotKey  126 / 211 , Galois element 19173
+Generate RotKey  127 / 211 , Galois element 19661
+Generate RotKey  128 / 211 , Galois element 19813
+Generate RotKey  129 / 211 , Galois element 19861
+Generate RotKey  130 / 211 , Galois element 19989
+Generate RotKey  131 / 211 , Galois element 20161
+Generate RotKey  132 / 211 , Galois element 20333
+Generate RotKey  133 / 211 , Galois element 20573
+Generate RotKey  134 / 211 , Galois element 20609
+Generate RotKey  135 / 211 , Galois element 20713
+Generate RotKey  136 / 211 , Galois element 20957
+Generate RotKey  137 / 211 , Galois element 21289
+Generate RotKey  138 / 211 , Galois element 21473
+Generate RotKey  139 / 211 , Galois element 21513
+Generate RotKey  140 / 211 , Galois element 21645
+Generate RotKey  141 / 211 , Galois element 21649
+Generate RotKey  142 / 211 , Galois element 21685
+Generate RotKey  143 / 211 , Galois element 21793
+Generate RotKey  144 / 211 , Galois element 21929
+Generate RotKey  145 / 211 , Galois element 22061
+Generate RotKey  146 / 211 , Galois element 22065
+Generate RotKey  147 / 211 , Galois element 22129
+Generate RotKey  148 / 211 , Galois element 22237
+Generate RotKey  149 / 211 , Galois element 22789
+Generate RotKey  150 / 211 , Galois element 22805
+Generate RotKey  151 / 211 , Galois element 23029
+Generate RotKey  152 / 211 , Galois element 23381
+Generate RotKey  153 / 211 , Galois element 23481
+Generate RotKey  154 / 211 , Galois element 23593
+Generate RotKey  155 / 211 , Galois element 23653
+Generate RotKey  156 / 211 , Galois element 23673
+Generate RotKey  157 / 211 , Galois element 23693
+Generate RotKey  158 / 211 , Galois element 24413
+Generate RotKey  159 / 211 , Galois element 24577
+Generate RotKey  160 / 211 , Galois element 24833
+Generate RotKey  161 / 211 , Galois element 24889
+Generate RotKey  162 / 211 , Galois element 25217
+Generate RotKey  163 / 211 , Galois element 25249
+Generate RotKey  164 / 211 , Galois element 25497
+Generate RotKey  165 / 211 , Galois element 25717
+Generate RotKey  166 / 211 , Galois element 26141
+Generate RotKey  167 / 211 , Galois element 26149
+Generate RotKey  168 / 211 , Galois element 26209
+Generate RotKey  169 / 211 , Galois element 26325
+Generate RotKey  170 / 211 , Galois element 26437
+Generate RotKey  171 / 211 , Galois element 26505
+Generate RotKey  172 / 211 , Galois element 26909
+Generate RotKey  173 / 211 , Galois element 27097
+Generate RotKey  174 / 211 , Galois element 27241
+Generate RotKey  175 / 211 , Galois element 27337
+Generate RotKey  176 / 211 , Galois element 27385
+Generate RotKey  177 / 211 , Galois element 27725
+Generate RotKey  178 / 211 , Galois element 27809
+Generate RotKey  179 / 211 , Galois element 27961
+Generate RotKey  180 / 211 , Galois element 27981
+Generate RotKey  181 / 211 , Galois element 27993
+Generate RotKey  182 / 211 , Galois element 28065
+Generate RotKey  183 / 211 , Galois element 28225
+Generate RotKey  184 / 211 , Galois element 28545
+Generate RotKey  185 / 211 , Galois element 28609
+Generate RotKey  186 / 211 , Galois element 28673
+Generate RotKey  187 / 211 , Galois element 28725
+Generate RotKey  188 / 211 , Galois element 29181
+Generate RotKey  189 / 211 , Galois element 29189
+Generate RotKey  190 / 211 , Galois element 29469
+Generate RotKey  191 / 211 , Galois element 29589
+Generate RotKey  192 / 211 , Galois element 29637
+Generate RotKey  193 / 211 , Galois element 29757
+Generate RotKey  194 / 211 , Galois element 30049
+Generate RotKey  195 / 211 , Galois element 30177
+Generate RotKey  196 / 211 , Galois element 30281
+Generate RotKey  197 / 211 , Galois element 30329
+Generate RotKey  198 / 211 , Galois element 30517
+Generate RotKey  199 / 211 , Galois element 30653
+Generate RotKey  200 / 211 , Galois element 30721
+Generate RotKey  201 / 211 , Galois element 30933
+Generate RotKey  202 / 211 , Galois element 30953
+Generate RotKey  203 / 211 , Galois element 31257
+Generate RotKey  204 / 211 , Galois element 31349
+Generate RotKey  205 / 211 , Galois element 31745
+Generate RotKey  206 / 211 , Galois element 31813
+Generate RotKey  207 / 211 , Galois element 32401
+Generate RotKey  208 / 211 , Galois element 32405
+Generate RotKey  209 / 211 , Galois element 32501
+Generate RotKey  210 / 211 , Galois element 32573
+Generate RotKey  211 / 211 , Galois element 32577
+1!: mhe.go:74 (mpc.ParallelNetworks.CollectiveInit) - CollectiveInit finished
+1  is ready
+Server iter  0
+Server updated from client  2 0
+Server aggregated all clients updates for iteartion  0
+Server sent updated model to all clients  0
+Server iter  1
+--- FAIL: TestExampleProtocol (174.57s)
+panic: EOF [recovered]
+	panic: EOF
+
+goroutine 5 [running]:
+testing.tRunner.func1.2({0x1282a80, 0xc0000980f0})
+	/usr/local/go/src/testing/testing.go:1209 +0x24e
+testing.tRunner.func1()
+	/usr/local/go/src/testing/testing.go:1212 +0x218
+panic({0x1282a80, 0xc0000980f0})
+	/usr/local/go/src/runtime/panic.go:1038 +0x215
+github.com/hhcho/sfgwas-private/mpc.ReadFull(0xc0000b3968, {0xc0001a8158, 0x8, 0x8})
+	/Users/dfroelic/go/src/dinvlad/sfgwas/mpc/netconnect.go:268 +0xdd
+github.com/hhcho/sfgwas-private/mpc.(*Network).ReceiveCipherVector(0xc000432000, 0xc0000a2008, 0xc0000b3e58, 0x2)
+	/Users/dfroelic/go/src/dinvlad/sfgwas/mpc/sendrecieve.go:257 +0x9b
+github.com/hhcho/sfgwas-private/mheexample.(*ExampleProtocolInfo).ExampleProtocol(0xc0070a15a0)
+	/Users/dfroelic/go/src/dinvlad/sfgwas/mheexample/protocol_example.go:68 +0x53d
+github.com/hhcho/sfgwas-private/mheexample.TestExampleProtocol(0x0)
+	/Users/dfroelic/go/src/dinvlad/sfgwas/mheexample/protocol_example_test.go:15 +0x31
+testing.tRunner(0xc000001d40, 0x12fc3c8)
+	/usr/local/go/src/testing/testing.go:1259 +0x102
+created by testing.(*T).Run
+	/usr/local/go/src/testing/testing.go:1306 +0x35a
+exit status 2
+FAIL	github.com/hhcho/sfgwas-private/mheexample	175.603s

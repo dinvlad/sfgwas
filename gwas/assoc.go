@@ -320,7 +320,7 @@ func (ast *AssocTest) GenoBlockMult(b int, mat crypto.CipherMatrix) (matOut cryp
 
 		log.LLvl1(time.Now().Format(time.RFC3339), "MatMult: block", b+1, "/", numBlocks, "cache found")
 
-		matOut = crypto.LoadCipherMatrixFromFile(cryptoParams, multFile)
+		matOut, _ = crypto.LoadCipherMatrixFromFile(cryptoParams, multFile)
 		dosageSum = LoadFloatVectorFromFile(dosFile, numCtx*slots)
 		dosageSqSum = LoadFloatVectorFromFile(dos2File, numCtx*slots)
 		filtOut = readFilterFromFile(filtFile, numCtx*slots, true)
@@ -495,7 +495,7 @@ func (ast *AssocTest) GetAssociationStats() (crypto.CipherVector, []bool) {
 	var Q crypto.CipherMatrix
 	if ast.general.config.UseCachedCombinedQ {
 		if pid > 0 {
-			Q = crypto.LoadCipherMatrixFromFile(cryptoParams, cacheFileQ)
+			Q, _ = crypto.LoadCipherMatrixFromFile(cryptoParams, cacheFileQ)
 			log.LLvl1(time.Now().Format(time.RFC3339), "Qcomb loaded from", cacheFileQ)
 		}
 	} else {
